@@ -42,7 +42,7 @@ export default class ImageOverlay extends Component {
       <ImageBackground
         source={source}
         style={[
-          styles.image,
+          // styles.image,
           imageStyle,
           {
             borderRadius: rounded,
