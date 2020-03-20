@@ -25,6 +25,7 @@ export default class ImageOverlay extends Component {
       rounded,
       source,
       title,
+      imageStyle,
       titleStyle,
       ...props
     } = this.props;
@@ -37,12 +38,12 @@ export default class ImageOverlay extends Component {
     } else if (contentPosition == "center") {
       justifyContent = "center";
     }
-
     return (
       <ImageBackground
         source={source}
         style={[
           styles.image,
+          imageStyle,
           {
             borderRadius: rounded,
             height: height,
